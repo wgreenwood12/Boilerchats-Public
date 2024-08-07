@@ -1,0 +1,17 @@
+body {
+    background-color: #292626; /* Medium Gray */
+  }
+  
+  /* Custom scrollbar track */
+  ::-webkit-scrollbar {
+    width: 11px; /* width of the entire scrollbar */
+    background-color: #454644; /* background color of the scrollbar track */
+  }
+  
+  /* Custom scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #CEB888; /* color of the scrollbar thumb */
+    border-radius: 5px; /* roundness of the scrollbar thumb */
+  }
+  
+  
