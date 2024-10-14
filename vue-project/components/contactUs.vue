@@ -56,24 +56,40 @@
     padding: 20px;
     background-color: #CEB888; /* Light Gray */
     border-radius: 8px;
+<<<<<<< HEAD
     text-align: center; 
+=======
+    text-align: center; /* Center the content */
+>>>>>>> 5143b5090d2c8ddb5728458517c8b6f766e0b200
     
   }
   
   .form-group {
     margin-bottom: 20px;
+<<<<<<< HEAD
     text-align: left;
+=======
+    text-align: left; /* Align form elements to the left */
+>>>>>>> 5143b5090d2c8ddb5728458517c8b6f766e0b200
   }
   
   label {
     display: block;
     margin-bottom: 5px;
+<<<<<<< HEAD
     color: #373A36;
+=======
+    color: #373A36; /* Dark Gray */
+>>>>>>> 5143b5090d2c8ddb5728458517c8b6f766e0b200
   }
   
   input,
   textarea {
+<<<<<<< HEAD
     width: calc(100% - 16px); 
+=======
+    width: calc(100% - 16px); /* Adjusting the width */
+>>>>>>> 5143b5090d2c8ddb5728458517c8b6f766e0b200
     padding: 8px;
     border: 1px solid #a0a0a0; /* Gold */
     border-radius: 4px;
@@ -83,7 +99,11 @@
   }
   
   textarea {
+<<<<<<< HEAD
     resize: vertical;
+=======
+    resize: vertical; /* Allowing vertical resizing */
+>>>>>>> 5143b5090d2c8ddb5728458517c8b6f766e0b200
   }
   
   button {

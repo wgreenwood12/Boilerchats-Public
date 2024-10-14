@@ -4,5 +4,9 @@
       "@/*": ["./src/*"]
     }
   },
+<<<<<<< HEAD
   "exclude": ["node_modules", "../dist"]
+=======
+  "exclude": ["node_modules", "dist"]
+>>>>>>> 5143b5090d2c8ddb5728458517c8b6f766e0b200
 }

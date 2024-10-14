@@ -143,7 +143,11 @@ export default {
   width: 100%;
   max-width: 1150px;
   box-sizing: border-box;
+<<<<<<< HEAD
   position: relative; 
+=======
+  position: relative; /* Ensure relative positioning for proper dropdown placement */
+>>>>>>> 5143b5090d2c8ddb5728458517c8b6f766e0b200
 }
 
 .search-input {
