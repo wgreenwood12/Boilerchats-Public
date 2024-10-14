@@ -1,0 +1,74 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - '3000:3000'
+    environment:
+      - DB_HOST=db
+      - DB_USER=dummy-user
+      - DB_PASS=dummy-password
+      - DB_NAME=dummy-database
+    volumes:
+      - ./database.js:/app/database.js
+      - ./server.js:/app/server.js
+
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile.db
+    environment:
+      - MYSQL_ROOT_PASSWORD=dummy-root-password
+      - MYSQL_DATABASE=dummy-database
+      - MYSQL_USER=dummy-user
+      - MYSQL_PASSWORD=dummy-password
+    volumes:
+      - db_data:/var/lib/mysql
+
+  frontend:
+    build:
+      context: ./vue-project
+    ports:
+      - '80:80'
+
+volumes:
+  db_data:
+version: '3.8'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - '3000:3000'
+    environment:
+      - DB_HOST=db
+      - DB_USER=backend-user
+      - DB_PASSWORD=backend-password
+      - DB_DATABASE=backend-database
+    volumes:
+      - ./database.js:/app/database.js
+      - ./server.js:/app/server.js
+
+  db:
+    build:
+      context: .
+      dockerfile: Dockerfile.db
+    environment:
+      - MYSQL_ROOT_PASSWORD=root-password
+      - MYSQL_DATABASE=my-database
+      - MYSQL_USER=my-user
+      - MYSQL_PASSWORD=my-password
+    volumes:
+      - db_data:/var/lib/mysql
+
+  frontend:
+    build:
+      context: ./vue-project
+    ports:
+      - '80:80'
+
+volumes:
+  db_data:
