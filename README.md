@@ -14,24 +14,13 @@ Boilerchats is a web application designed to help Purdue University students eas
 - **Backend:** Node.js, Express.js
 - **Database:** MySQL
 - **Integration:** GroupMe API, Purdue Course Catalog
-- **Infrastructure:** Docker, Docker Compose, AWS EC2, Route 53
+- **Infrastructure/Hosting:** Docker, Docker Compose, AWS (EC2, Route 53, VPC), Nginx, PM2
 
 ---
 
 ## Dockerized Setup
 
 This project has been containerized using **Docker** and orchestrated using **Docker Compose** to streamline the setup and deployment process. With Docker, you can easily package and ship the entire application, along with its dependencies, across different environments.
-
-### Project Structure
-
-The Boilerchats project is organized into three main components:
-1. **Frontend (Vue.js)**
-2. **Backend (Node.js/Express)**
-3. **MySQL Database**
-
-The project uses Docker Compose to build and run these components in isolated containers.
-
----
 
 ## Prerequisites
 
